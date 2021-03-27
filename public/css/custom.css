@@ -1,0 +1,78 @@
+#home{
+  background: url("/img/plomberie.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  border-bottom: 3px solid #60A5FA;
+}
+.bg-c-d{
+  background-color: #232323;
+}
+/* .bg-c-d{
+  background-color: #474747;
+}
+.bg-b{
+  background-color: #38BDF8;
+}
+ */
+.active{
+  background-color: #232323;
+}
+#toTop{
+	display: none;
+	position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 10px 20px;
+	border-radius: 5px;
+  font-size: 45px;
+}
+#toTop:hover{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+/* #burger{
+  float: right;
+  border-top:solid 3px var(--light);
+  border-bottom:solid 3px var(--light);
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  margin: 8px;
+  z-index: 10;
+}
+#burger::before,#burger::after{
+  position: absolute;
+  content:'';
+  top: 50%;
+  left: 5%;
+  display: block;
+  width: 90%;
+  height: 3px;
+  background-color: var(--light);
+  transition: all .3s;
+}
+#burger:not(.close){
+  border: none;
+  transform: rotate(90deg);
+  transition: all .3s;
+}
+#burger:not(.close)::before{
+  transform: rotate(45deg);
+}
+#burger:not(.close)::after{
+  transform: rotate(-45deg);
+} */
+/*
+@media all and (min-width:768px){
+  #prestations article:nth-of-type(even){
+    flex-direction: row-reverse;
+    margin-top: 180px;
+  }
+}*/
