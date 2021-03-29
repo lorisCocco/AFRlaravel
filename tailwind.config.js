@@ -6,4 +6,16 @@ module.exports = {
     variants: {},
     plugins: []
   }
+};
+
+
+module.exports = {
+  purge: [
+    './public/**/*.html',
+    './resources/**/*.blade.php',
+    './public/**/*.js',
+  ],
+  theme: {},
+  variants: {},
+  plugins: [],
 }
