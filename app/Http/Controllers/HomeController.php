@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class HomeController extends Controller
 {
@@ -28,7 +30,7 @@ class HomeController extends Controller
         ]);
 
         Contact::create($request->all());
-
+        Mail::to('contact@atelierdelaforgeroyale.com')->send(new ContactMail($request->except('_token')));
         return back()->with('success', 'Votre formulaire a bien été validé.');
     }
 }
